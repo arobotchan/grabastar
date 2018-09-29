@@ -288,13 +288,13 @@ var dead = 0;
 var j = 0;
 
 // Background Music & sound effects
-var backmusic = new Audio('sound/backmusic.mp3');
-var pickup = new Audio('sound/pickup.mp3');
-var impact = new Audio('sound/impact.mp3');
-var win = new Audio('sound/win.mp3');
-var deny = new Audio('sound/deny.mp3');
-backmusic.loop = true;
-backmusic.play();
+// var backmusic = new Audio('sound/backmusic.mp3');
+// var pickup = new Audio('sound/pickup.mp3');
+// var impact = new Audio('sound/impact.mp3');
+// var win = new Audio('sound/win.mp3');
+// var deny = new Audio('sound/deny.mp3');
+// backmusic.loop = true;
+// backmusic.play();
 
 // Player object variable. Also added additional object variables: 
 // star, heart, deadplayer, deadplayerheart, deadplayerstar, deadplayerstarheart

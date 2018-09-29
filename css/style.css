@@ -9,12 +9,12 @@ header {
 	font-size: 24px;
 }
 
-/*.container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}*/
+}
 
 .scripts {
 	

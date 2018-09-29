@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    background-image: url('../images/bg1.png');
+    font-family: Snap ITC, Tahoma;
+}
+
+header {
+	color: blue;
+	font-size: 24px;
+}
+
+footer {
+  width: 100%;
+  font-size: 18px;
+  color: #888787;
+
+}

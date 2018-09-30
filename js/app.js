@@ -2,9 +2,10 @@
 // stuffs.  Needed to move on to next projects. May come back to add some more interesting things in 
 // the future. Ex,originally wanting to have the heart appear randomly but stuck on some issues i 
 // created. So, took the easy way out, the heart shows up every round which loses the wow factor,lol.
+'use strict'; //  To force me to fix issues. 
 
 // Enemy characters
-var character = ['enemy-bug', 'char-cat-girl', 'char-horn-girl', 'char-pink-girl', 'char-princess-girl'];
+const character = ['enemy-bug', 'char-cat-girl', 'char-horn-girl', 'char-pink-girl', 'char-princess-girl'];
 
 // ** Enemy Class ** Enemies our player must avoid
 var Enemy = function(x, y) {
@@ -44,7 +45,7 @@ Enemy.prototype.update = function(dt) {
 // Draw the enemy on the screen, required method for game, also draw scores & # of lives left.
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-    ctx.font = "22px Snap ITC, Tahoma";
+    ctx.font = '22px Snap ITC, Tahoma';
     ctx.fillStyle = "#A2A2A2";
     ctx.fillText("Score:  " + score + "   Lives:  " + live, 110, 45);      
 };

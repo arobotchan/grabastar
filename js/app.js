@@ -96,33 +96,33 @@ Player.prototype.render = function() {
 Player.prototype.handleInput = function(keyPress) {
     if (keyPress == 'left' && dead == 0) {
         player.x -= player.steps + 20;
-    };
+    }
     if (keyPress == 'up' && dead == 0) {
         player.y -= player.steps;
         backmusic.play(); //music play for chrome browser
-    };
+    }
     if (keyPress == 'right' && dead == 0) {
         player.x += player.steps + 20;
-    };
+    }
     if (keyPress == 'down' && dead == 0) {
         player.y += player.steps;
-    };
+    }
     if (player.y > 383 && dead == 0) {
         player.y = 383;
-    };
+    }
     if (player.y < 0 && dead == 0 && player.sprite == 'images/char-boy.png') {
         player.y = 63;
         deny.play();
-    };      
+    }      
     if (player.y < 0 && dead == 0 && (player.sprite =='images/char-boy-star.png' || player.sprite == 'images/char-boy-heart.png' || player.sprite == 'images/char-boy-star-heart.png')) {
         player.y = -10;  
     }
     if (player.x > 400 && dead == 0) {
         player.x = 400;
-    };
+    }
     if (player.x < 2.5 && dead == 0) {
         player.x = 2.5;
-    };
+    }
 };
 
 // ** Star Class **
@@ -139,12 +139,12 @@ Star.prototype.update = function () {
      if (player.sprite == 'images/char-boy.png'){
         player.sprite = 'images/char-boy-star.png';
         pickup.play();
-     };
+     }
      if (player.sprite == 'images/char-boy-heart.png'){
         player.sprite = 'images/char-boy-star-heart.png'; 
         pickup.play();   
-     };
-    };
+     }
+    }
 };
 
 Star.prototype.render = function () {
@@ -165,12 +165,12 @@ Heart.prototype.update = function () {
      if (player.sprite == 'images/char-boy.png'){
         player.sprite = 'images/char-boy-heart.png';
         pickup.play();
-     };
+     }
      if (player.sprite == 'images/char-boy-star.png'){
         player.sprite = 'images/char-boy-star-heart.png';
         pickup.play();
-     };
-    };
+     }
+    }
 };
 
 Heart.prototype.render = function () {
@@ -191,16 +191,16 @@ DeadPlayer.prototype.update = function() {
 DeadPlayer.prototype.render = function() {
     if (player.sprite == 'images/char-boy.png'){
       ctx.drawImage(Resources.get(deadplayer.sprite), this.x, this.y);
-    };
+    }
     if (player.sprite == 'images/char-boy-star.png'){
       ctx.drawImage(Resources.get(deadplayerstar.sprite), this.x, this.y);
-    };
+    }
     if (player.sprite == 'images/char-boy-heart.png'){
       ctx.drawImage(Resources.get(deadplayerheart.sprite), this.x, this.y);
-    };
+    }
     if (player.sprite == 'images/char-boy-star-heart.png'){
       ctx.drawImage(Resources.get(deadplayerstarheart.sprite), this.x, this.y); 
-    };
+    }
 };
 
 // *Other additional DeadPlayer classes*
@@ -309,7 +309,7 @@ var deadplayerstarheart = new DeadPlayerStarHeart(1000, 1000);
 for (var i = 0; i <= 2; i++) {
     var enemy = new Enemy(0, j = j + 75);
     allEnemies.push(enemy);
-};
+}
 
  // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.

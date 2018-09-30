@@ -4,7 +4,7 @@
 // created. So, took the easy way out, the heart shows up every round which loses the wow factor,lol.
 
 // Enemy characters
-const character = ['enemy-bug', 'char-cat-girl', 'char-horn-girl', 'char-pink-girl', 'char-princess-girl'];
+var character = ['enemy-bug', 'char-cat-girl', 'char-horn-girl', 'char-pink-girl', 'char-princess-girl'];
 
 // ** Enemy Class ** Enemies our player must avoid
 var Enemy = function(x, y) {
